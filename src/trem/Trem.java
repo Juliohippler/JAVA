@@ -10,7 +10,6 @@ package trem;
  * @author julio
  */
 public class Trem {
-
    
     private String nome;
     private HorarioTrem horarioTrem;
@@ -24,5 +23,10 @@ public class Trem {
         this.tipoTrem=tipoTrem;
     }
     
+   @Override
+    public String toString() {
+        return nome + ", " + horarioTrem + " Horas, " + rota + ", " + tipoTrem;
     
 }
+}
+

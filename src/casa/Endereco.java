@@ -20,17 +20,10 @@ public class Endereco {
         this.cidade=cidade;
     }
     
-    public String getCidade() {
-        return cidade;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public String getRua() {
-        return rua;
-    }
+    @Override
+       public String toString() {
+        return  rua + " " + numero +  ", " + cidade;
+    }    
     
     
     

@@ -12,8 +12,11 @@ package trem;
 public class NovoMain {
     public static void main(String[] args){
         TipoTrem tt1 = TipoTrem.DISTANCIA;
-        HorarioTrem ht1=new HorarioTrem(13:30, "marginal");
+        HorarioTrem ht1=new HorarioTrem(13, "marginal");
         Rota rt1= new Rota("marechal", "palotina");
         Trem t1 = new Trem("Trem da vila", ht1, rt1, tt1);
+        
+        System.out.println(t1.toString());
     }
+    
 }

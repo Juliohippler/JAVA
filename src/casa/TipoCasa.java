@@ -18,9 +18,12 @@ public enum TipoCasa {
         this.valor = valor;
     }
 
-    public String getValor() {
+
+    @Override
+    public String toString() {
         return valor;
     }
+     
     
     
 }

@@ -10,10 +10,10 @@ package trem;
  * @author julio
  */
 public class HorarioTrem {
-    private horario hora;
+    private int hora;
     private String estacao;
     
-    public HorarioTrem(horario hora, String estacao){
+    public HorarioTrem(int hora, String estacao){
         this.estacao=estacao;
         this.hora=hora;
     }

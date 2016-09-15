@@ -10,18 +10,24 @@ package casa;
  * @author julio
  */
 public class Casa {
-   
-    private TipoCasa tipocasa;
-    private Preco preco;
-    private Endereco endereco;
-    private Quartos quartos;
+    
+    private int quartos;
+    private Double preco;
+    private TipoCasa tipocasa;    
+    private Endereco endereco; 
    
     
-    public Casa(TipoCasa tipocasa, Preco preco, Endereco endereco, Quartos quartos){
+    public Casa(TipoCasa tipocasa, Double preco, Endereco endereco, int quartos){
         this.tipocasa=tipocasa;
         this.preco=preco;
-        this.endereco=endereco;
-        
+        this.endereco=endereco;        
         this.quartos=quartos;
     }
+
+     @Override
+    public String toString() {
+        return tipocasa + ", " + quartos + " quartos, " + preco + ", " + endereco;
+    }
+    
+    
 }
