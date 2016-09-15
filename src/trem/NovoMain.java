@@ -17,6 +17,13 @@ public class NovoMain {
         Trem t1 = new Trem("Trem da vila", ht1, rt1, tt1);
         
         System.out.println(t1.toString());
+        
+        TipoTrem tt2 = TipoTrem.LOCAL;
+        HorarioTrem ht2=new HorarioTrem(13, "Ipiranga");
+        Rota rt2= new Rota("Botafogo", "Higienopolis");
+        Trem t2 = new Trem("Trem das favela", ht2, rt2, tt2);
+        
+        System.out.println(t2.toString());
     }
     
 }

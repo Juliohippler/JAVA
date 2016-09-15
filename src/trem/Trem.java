@@ -25,7 +25,7 @@ public class Trem {
     
    @Override
     public String toString() {
-        return nome + ", " + horarioTrem + " Horas, " + rota + ", " + tipoTrem;
+        return nome + ", " + horarioTrem  + rota + ", " + tipoTrem;
     
 }
 }

@@ -17,10 +17,10 @@ public class Rota {
         this.origem=origem;
         this.destino=destino;
     }
-
+        
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return " saindo de " + origem + " com destino a " + destino; //To change body of generated methods, choose Tools | Templates.
     }
     
 }
