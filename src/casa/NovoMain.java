@@ -13,20 +13,22 @@ public class NovoMain {
     
     public static void main(String[] args) {
         TipoCasa tc1 = TipoCasa.CASACOLONIAL;
-        Preco pc1 = new Preco(300.0);
         Endereco ec1 = new Endereco("Rua 7 de setembro", 3560,"marechal");
+        Casa c1 = new Casa(tc1, 300.00, ec1, 5);       
+        
+        System.out.println(c1.toString());
+        
+        
+        TipoCasa tc2 = TipoCasa.SOBRADO;       
+        Endereco ec2 = new Endereco("Avenida RIo grande do sul ", 3560,"palotina");
+        Casa c2 = new Casa(tc2, 230.00, ec2, 3);
   
-        Quartos qc1 = new Quartos(3);
+        System.out.println(c2.toString());
         
-        System.out.println(tc1.getValor()+"," +qc1.getQuartos()+" quartos,"+pc1.getPreco()+" reais,"+ec1.getRua()+","+ec1.getNumero()+","+ec1.getCidade() );
-        
-        
-        TipoCasa tc2 = TipoCasa.SOBRADO;
-        Preco pc2 = new Preco(300.0);
-        Endereco ec2 = new Endereco("Rua 7 de setembro", 3560,"palotina");
+        TipoCasa tc3 = TipoCasa.PREDIO;       
+        Endereco ec3 = new Endereco("Abenida das Torres", 3560,"guaira");
+        Casa c3 = new Casa(tc3, 1000000.00, ec3, 8);
   
-        Quartos qc2 = new Quartos(2);
-        
-        System.out.println(tc2.getValor()+"," +qc2.getQuartos()+" quartos,"+pc2.getPreco()+" reais,"+ec2.getRua()+","+ec2.getNumero()+","+ec2.getCidade() );
+        System.out.println(c3.toString());
     }
 }
